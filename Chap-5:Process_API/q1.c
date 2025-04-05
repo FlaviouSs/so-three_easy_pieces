@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
+#include <sys/wait.h>
 
 int main(void) {
 
@@ -28,6 +29,9 @@ int main(void) {
 
 Source: https://man7.org/linux/man-pages/man2/fork.2.html
 
-At line 8, we've created a child process. We bassically duplicate the calling process. At the time we call fork(), the child process and the parent process have different memory spaces. However, both memory spaces have the same content.
+At line 8, we've created a child process.
+We bassically duplicate the calling process. At the time we call fork(), the child process and the parent process have different memory spaces.
+However, both memory spaces have the same content.
+So, each oh them have a memory space to a variable called 'x'. If we change the 'x' of one of them, it won't affect the 'x' value in the other. 
 
 */

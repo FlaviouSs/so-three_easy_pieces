@@ -28,3 +28,12 @@ int main(void) {
 
   return 0;
 }
+
+/*
+
+Sources: 
+
+https://man7.org/linux/man-pages/man2/open.2.html
+https://man7.org/linux/man-pages/man2/write.2.html
+
+*/
